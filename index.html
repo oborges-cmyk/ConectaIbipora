@@ -3,11 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pra Frente Ibiporã</title>
+    <title>Conecta Ibiporã</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!--para avisar e concluir  mais breve consetos e melhorias em locais publicos com o aviso do povo e o apoio da prefeitura-->
-    <script srsc="script.js" defer></script>
+    
+<div class="container">
+    <h2>Banco de Talentos</h2>
+    <form id="talentForm">
+        <label for="nome">Nome Completo</label>
+        <input type="text" id="nome" required placeholder="Ex: Maria Silva">
+
+        <label for="talento">Seu Talento / Serviço</label>
+        <select id="talento" required>
+            <option value="">Selecione...</option>
+            <option value="Reforço Escolar">Reforço Escolar</option>
+            <option value="Consertos">Consertos / Manutenção</option>
+            <option value="Gastronomia">Gastronomia / Culinária</option>
+            <option value="Outros">Outros</option>
+        </select>
+
+        <label for="contato">Contato (WhatsApp/E-mail)</label>
+        <input type="text" id="contato" required placeholder="Ex: (11) 99999-9999">
+
+        <button type="submit">Cadastrar Talento</button>
+    </form>
+    <div id="mensagem"></div>
+</div>
 </body>
 </html>
